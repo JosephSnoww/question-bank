@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Physics Question Bank</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .question {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .answer {
+      margin-top: 0.5rem;
+      color: #444;
+      display: none;
+    }
+    button {
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Physics Question Bank</h1>
+
+  <label for="topicSelect"><b>Choose a topic:</b></label>
+  <select id="topicSelect">
+    <option value="all">All topics</option>
+  </select>
+
+  <button id="randomBtn">Random question</button>
+
+  <h2>Questions</h2>
+  <div id="questions"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
