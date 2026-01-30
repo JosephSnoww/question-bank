@@ -46,6 +46,45 @@
       font-weight: 300;
     }
 
+    .mode-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .mode-tab {
+      padding: 10px 20px;
+      border: 2px solid #ddd;
+      background: white;
+      color: #333;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .mode-tab.active {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border-color: #667eea;
+    }
+
+    .mode-tab:hover {
+      border-color: #667eea;
+    }
+
+    .mode-content {
+      display: none;
+    }
+
+    .mode-content.active {
+      display: block;
+    }
+
     .controls {
       background: white;
       padding: 25px;
@@ -70,7 +109,7 @@
       font-size: 0.95em;
     }
 
-    select#topicSelect {
+    select, input {
       padding: 10px 15px;
       border: 2px solid #e0e0e0;
       border-radius: 8px;
@@ -82,18 +121,18 @@
       font-weight: 500;
     }
 
-    select#topicSelect:hover {
+    select:hover, input:hover {
       border-color: #667eea;
       box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
     }
 
-    select#topicSelect:focus {
+    select:focus, input:focus {
       outline: none;
       border-color: #667eea;
       box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
     }
 
-    button#randomBtn {
+    button {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
       border: none;
@@ -106,17 +145,13 @@
       box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
     }
 
-    button#randomBtn:hover {
+    button:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
     }
 
-    button#randomBtn:active {
+    button:active {
       transform: translateY(0);
-    }
-
-    .questions-section {
-      margin-bottom: 30px;
     }
 
     .section-title {
@@ -161,10 +196,8 @@
       line-height: 1.5;
     }
 
-    .topic-badge {
+    .topic-badge, .difficulty-badge {
       display: inline-block;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
       padding: 4px 12px;
       border-radius: 20px;
       font-size: 0.8em;
@@ -173,13 +206,9 @@
       margin-bottom: 8px;
     }
 
-    .difficulty-badge {
-      display: inline-block;
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 0.8em;
-      font-weight: 600;
-      margin-bottom: 8px;
+    .topic-badge {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
     }
 
     .difficulty-badge.basic {
@@ -242,8 +271,33 @@
       box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
     }
 
-    .answer-button:active {
-      transform: scale(0.98);
+    .checkbox-question {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .checkbox-question input[type="checkbox"] {
+      margin-top: 5px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .selected-count {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .exam-preview {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     }
 
     .no-questions {
@@ -270,16 +324,15 @@
         flex-direction: column;
       }
 
-      select#topicSelect {
+      select, input {
         width: 100%;
       }
 
-      button#randomBtn {
+      button {
         width: 100%;
       }
     }
 
-    /* MathJax styling */
     .MathJax {
       color: #667eea !important;
     }
@@ -292,19 +345,49 @@
       <p>Master your understanding through targeted practice</p>
     </header>
 
-    <div class="controls">
-      <div class="control-group">
-        <label for="topicSelect">Select Topic:</label>
-        <select id="topicSelect">
-          <option value="all">All topics</option>
-        </select>
-      </div>
-      <button id="randomBtn">🎲 Random Question</button>
+    <div class="mode-tabs">
+      <button class="mode-tab active" onclick="switchMode('practice')">📖 Practice</button>
+      <button class="mode-tab" onclick="switchMode('exam')">📝 Create Exam</button>
     </div>
 
-    <div class="questions-section">
-      <div class="section-title">Questions</div>
-      <div id="questions"></div>
+    <!-- Practice Mode -->
+    <div id="practice" class="mode-content active">
+      <div class="controls">
+        <div class="control-group">
+          <label for="topicSelect">Select Topic:</label>
+          <select id="topicSelect">
+            <option value="all">All topics</option>
+          </select>
+        </div>
+        <button id="randomBtn">🎲 Random Question</button>
+      </div>
+
+      <div class="questions-section">
+        <div class="section-title">Questions</div>
+        <div id="questions"></div>
+      </div>
+    </div>
+
+    <!-- Exam Mode -->
+    <div id="exam" class="mode-content">
+      <div class="controls">
+        <div class="control-group">
+          <label for="examTopicSelect">Filter by Topic:</label>
+          <select id="examTopicSelect">
+            <option value="all">All topics</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="selected-count">
+        <span id="selectedCount">0</span> questions selected
+      </div>
+
+      <div id="examQuestions"></div>
+
+      <div style="margin-top: 30px; text-align: center;">
+        <button id="generateExamBtn" style="padding: 15px 40px; font-size: 1.1em;" onclick="generateExam()">📄 Generate Exam PDF</button>
+      </div>
     </div>
   </div>
 
