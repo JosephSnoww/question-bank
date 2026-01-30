@@ -1,322 +1,74 @@
 [
   {
-    "topic": "General Physics",
-    "question": "The diagram shows an enlarged drawing of the end of a metre ruler. It is being used to measure the length of a small feather.\n\n\n\nWhat is the length of the feather?",
+    "id": "k001",
+    "topic": "Kinematics",
+    "question": "A car accelerates uniformly from rest to $$v = 25 \\text{ m/s}$$ in $$t = 10 \\text{ s}$$. Calculate its acceleration.",
     "difficulty": "Basic",
-    "answer": "A (19 mm)",
-    "image": "2024-june-measurement-feather-ruler-Q1.png",
-    "page": 2
-  },
-  {
-    "topic": "General Physics",
-    "question": "The diagram shows two objects, X and Y, suspended from identical springs. The extension of each spring is different.\n\n\n\nWhich row compares the mass and the weight of the two objects?",
-    "difficulty": "Basic",
-    "answer": "D (Mass: the mass of X is less than the mass of Y; Weight: the weight of X is less than the weight of Y)",
-    "image": "2024-june-mass-weight-springs-Q2.png",
-    "page": 2
-  },
-  {
-    "topic": "General Physics",
-    "question": "A plastic bottle contains $$750~cm^{3}$$ of oil. The diagram shows the mass of the bottle being measured when it is full and then when it is empty.\n\n\n\nWhat is the density of the oil?",
-    "difficulty": "Intermediate",
-    "answer": "A ($$0.80~g/cm^{3}$$)",
-    "image": "2024-june-density-bottle-scales-Q3.png",
-    "page": 3
-  },
-  {
-    "topic": "General Physics",
-    "question": "The extension-load graph for a spring is shown. The unstretched length of the spring is 15.0 cm.\n\n\n\nWhen an object of unknown weight is suspended on the spring, the length of the spring is 16.4 cm.\nWhat is the weight of the object?",
-    "difficulty": "Intermediate",
-    "answer": "C (3.5 N)",
-    "image": "2024-june-hookes-law-graph-Q4.png",
-    "page": 3
-  },
-  {
-    "topic": "Mechanics",
-    "question": "A student determines the position of the centre of gravity of a piece of card. The diagram shows the equipment that is available. The equipment is not drawn to scale.\n\n\n\nWhich piece of equipment is not needed?",
-    "difficulty": "Basic",
-    "answer": "D (stop-watch)",
-    "image": "2024-june-center-of-gravity-equipment-Q5.png",
-    "page": 4
-  },
-  {
-    "topic": "Energy",
-    "question": "A cyclist stops his bicycle using the brakes.\nWhich row about energy stores is correct?",
-    "difficulty": "Basic",
-    "answer": "B (Decreases: kinetic energy store of bicycle; Increases: thermal energy store of brakes)",
+    "answer": "Using $$a = \\frac{v - u}{t} = \\frac{25 - 0}{10} = 2.5 \\text{ m/s}^2$$",
     "image": null,
-    "page": 4
+    "marks": 3
   },
   {
-    "topic": "Mechanics",
-    "question": "A man applies a force of 40 N to push a box along the floor.\n\n\n\nHow much power is required to push the box 4.0 m in 3.0 seconds?",
-    "difficulty": "Intermediate",
-    "answer": "C (53 W)",
-    "image": "2024-june-power-work-box-Q7.png",
-    "page": 4
-  },
-  {
-    "topic": "General Physics",
-    "question": "Four identical submarines, P, Q, R and S, are lowered from one depth to another in water of a constant density. The initial and final depths of each submarine are shown.\n\n\n\nWhich row is correct for the difference in pressure from the initial to the final depth of each submarine?",
-    "difficulty": "Intermediate",
-    "answer": "A (Least change: submarines P and Q; Greatest change: submarines R and S)",
-    "image": "2024-june-pressure-submarines-Q8.png",
-    "page": 5
-  },
-  {
-    "topic": "Thermal Physics",
-    "question": "Some terms describing changes of state are listed.\n1 boiling\n2 solidification\n3 condensation\n4 evaporation\n\nWhich two terms identify the same change of state?",
-    "difficulty": "Basic",
-    "answer": "B (1 and 4)",
-    "image": null,
-    "page": 5
-  },
-  {
-    "topic": "Thermal Physics",
-    "question": "Diagram 1 shows apparatus being used to observe smoke particles. Diagram 2 shows how a smoke particle moves randomly.\n\n\n\nWhy do the smoke particles move randomly?",
-    "difficulty": "Basic",
-    "answer": "A (They are hit by air particles.)",
-    "image": "2024-june-brownian-motion-smoke-Q10.png",
-    "page": 6
-  },
-  {
-    "topic": "Thermal Physics",
-    "question": "How is a temperature in degrees Celsius ($$^{\\circ}C$$) converted to a temperature in kelvin (K)?",
-    "difficulty": "Basic",
-    "answer": "A (Add 273 to the temperature in $$^{\\circ}C$$.)",
-    "image": null,
-    "page": 6
-  },
-  {
-    "topic": "Thermal Physics",
-    "question": "The diagram shows a frictionless piston inside a cylinder. The air inside the cylinder is heated. The piston moves in the direction shown.\n\n\n\nWhich statement about the air inside the cylinder is correct?",
-    "difficulty": "Intermediate",
-    "answer": "A (The temperature and volume increase at constant pressure.)",
-    "image": "2024-june-gas-laws-piston-Q12.png",
-    "page": 7
-  },
-  {
-    "topic": "Thermal Physics",
-    "question": "What increases when the temperature of a copper block increases?",
-    "difficulty": "Basic",
-    "answer": "C (the internal energy of the block)",
-    "image": null,
-    "page": 7
-  },
-  {
-    "topic": "Thermal Physics",
-    "question": "A textbook gives the description of a thermal process as 'more-energetic molecules escape from the surface of a liquid which causes the liquid to cool'.\nWhich process is being described?",
-    "difficulty": "Basic",
-    "answer": "D (evaporation)",
-    "image": null,
-    "page": 7
-  },
-  {
-    "topic": "Thermal Physics",
-    "question": "In which situation is radiation the main method by which energy is transferred?",
-    "difficulty": "Basic",
-    "answer": "B (energy reaching the Earth from the Sun)",
-    "image": null,
-    "page": 7
-  },
-  {
+    "id": "w001",
     "topic": "Waves",
-    "question": "The diagram represents a wave.\n\n\n\nWhich row gives the wavelength and the amplitude of the wave?",
+    "question": "A wave has frequency $$f = 50 \\text{ Hz}$$ and wavelength $$\\lambda = 0.8 \\text{ m}$$. Calculate its speed.",
     "difficulty": "Basic",
-    "answer": "D (Wavelength: $$x/2$$; Amplitude: $$y/2$$)",
-    "image": "2024-june-wave-properties-diagram-Q16.png",
-    "page": 8
+    "answer": "Using $$v = f \\lambda = 50 \\times 0.8 = 40 \\text{ m/s}$$",
+    "image": null,
+    "marks": 3
   },
   {
+    "id": "e001",
+    "topic": "Electricity",
+    "question": "A $$6 \\Omega$$ resistor is connected across a $$12 \\text{ V}$$ supply. Find the current using Ohm's law.",
+    "difficulty": "Basic",
+    "answer": "Using $$I = \\frac{V}{R} = \\frac{12}{6} = 2 \\text{ A}$$",
+    "image": null,
+    "marks": 3
+  },
+  {
+    "id": "k002",
+    "topic": "Kinematics",
+    "question": "An object falls freely from rest. After $$t = 3 \\text{ s}$$, calculate the distance fallen. (Take $$g = 10 \\text{ m/s}^2$$)",
+    "difficulty": "Intermediate",
+    "answer": "Using $$s = \\frac{1}{2}gt^2 = \\frac{1}{2} \\times 10 \\times 3^2 = 45 \\text{ m}$$",
+    "image": null,
+    "marks": 4
+  },
+  {
+    "id": "e002",
+    "topic": "Electricity",
+    "question": "Three resistors of $$3\\Omega$$, $$4\\Omega$$, and $$5\\Omega$$ are connected in series. Find the total resistance.",
+    "difficulty": "Intermediate",
+    "answer": "For series: $$R_{\\text{total}} = R_1 + R_2 + R_3 = 3 + 4 + 5 = 12 \\Omega$$",
+    "image": null,
+    "marks": 4
+  },
+  {
+    "id": "e003",
+    "topic": "Electricity",
+    "question": "Calculate the power dissipated in a $$10\\Omega$$ resistor when a current of $$2\\text{ A}$$ flows through it.",
+    "difficulty": "Intermediate",
+    "answer": "Using $$P = I^2 R = 2^2 \\times 10 = 40 \\text{ W}$$",
+    "image": null,
+    "marks": 4
+  },
+  {
+    "id": "w002",
     "topic": "Waves",
-    "question": "Which row describes a seismic P-wave?",
-    "difficulty": "Basic",
-    "answer": "A (Type: longitudinal; Direction: parallel to the direction of propagation of the wave)",
-    "image": null,
-    "page": 8
-  },
-  {
-    "topic": "Waves",
-    "question": "Which diagram shows waves diffracting?",
-    "difficulty": "Basic",
-    "answer": "D (Diagram showing waves spreading through a gap)",
-    "image": "2024-june-diffraction-waves-Q18.png",
-    "page": 9
-  },
-  {
-    "topic": "Light",
-    "question": "The diagram shows a ray of light in glass incident on the surface between the glass and air.\n\n\n\nWhat happens if the angle of incidence is made larger than the critical angle for the glass?",
+    "question": "A sound wave has a frequency of $$340 \\text{ Hz}$$ and travels at $$340 \\text{ m/s}$$ in air. Calculate the wavelength.",
     "difficulty": "Intermediate",
-    "answer": "D (There is only a ray reflected inside the glass.)",
-    "image": "2024-june-light-refraction-critical-angle-Q19.png",
-    "page": 9
-  },
-  {
-    "topic": "Light",
-    "question": "Red light of frequency $$430 \\times 10^{12} Hz$$ has a wavelength of $$700 \\times 10^{-9} m$$. What is possible for blue light?",
-    "difficulty": "Intermediate",
-    "answer": "C (a frequency of $$670 \\times 10^{12} Hz$$ and a wavelength of $$450 \\times 10^{-9} m$$)",
+    "answer": "Using $$\\lambda = \\frac{v}{f} = \\frac{340}{340} = 1 \\text{ m}$$",
     "image": null,
-    "page": 9
+    "marks": 4
   },
   {
-    "topic": "Waves",
-    "question": "Infrared is a useful type of electromagnetic radiation. However, excessive exposure to infrared can cause harmful effects.\nWhich row gives a use and a harmful effect for infrared?",
-    "difficulty": "Basic",
-    "answer": "B (Use: intruder alarms; Harmful effect: skin burns)",
+    "id": "k003",
+    "topic": "Kinematics",
+    "question": "A projectile is launched with initial velocity $$v_0 = 20 \\text{ m/s}$$ at an angle of $$30^\\circ$$ to the horizontal. Find the maximum height (use $$g = 10 \\text{ m/s}^2$$).",
+    "difficulty": "Advanced",
+    "answer": "$$h_{\\text{max}} = \\frac{(v_0 \\sin \\theta)^2}{2g} = \\frac{(20 \\times 0.5)^2}{2 \\times 10} = \\frac{100}{20} = 5 \\text{ m}$$",
     "image": null,
-    "page": 10
-  },
-  {
-    "topic": "Sound",
-    "question": "The table shows data for the hearing ranges of different animals.\nWhich animal has the most similar hearing range to a human?",
-    "difficulty": "Basic",
-    "answer": "D (elephant: 16-12000 Hz)",
-    "image": null,
-    "page": 10
-  },
-  {
-    "topic": "Sound",
-    "question": "Which description of ultrasound is correct?",
-    "difficulty": "Basic",
-    "answer": "A (longitudinal waves with a frequency greater than 20 000 Hz)",
-    "image": null,
-    "page": 10
-  },
-  {
-    "topic": "Magnetism",
-    "question": "Which diagram shows the pattern and the direction of the magnetic field lines around a bar magnet?",
-    "difficulty": "Basic",
-    "answer": "A (Diagram showing field lines emerging from N and entering S)",
-    "image": "2024-june-magnetic-field-bar-magnet-Q24.png",
-    "page": 11
-  },
-  {
-    "topic": "Electricity",
-    "question": "Which material is a good electrical conductor?",
-    "difficulty": "Basic",
-    "answer": "B (copper)",
-    "image": null,
-    "page": 11
-  },
-  {
-    "topic": "Electricity",
-    "question": "What is an electric current and how is an ammeter positioned in a circuit to measure the current in a resistor?",
-    "difficulty": "Basic",
-    "answer": "B (Current: a flow of charge; Ammeter: in series with the resistor)",
-    "image": null,
-    "page": 11
-  },
-  {
-    "topic": "Electricity",
-    "question": "Which unit is used for the potential difference (p.d.) between two points in an electrical circuit?",
-    "difficulty": "Basic",
-    "answer": "D (volt (V))",
-    "image": null,
-    "page": 12
-  },
-  {
-    "topic": "Electricity",
-    "question": "The circuit in the diagram contains four switches, $$S_{1}$$, $$S_{2}$$, $$S_{3}$$ and $$S_{4}$$.\n\n\n\nWhich three switches must be closed for the heater to work?",
-    "difficulty": "Intermediate",
-    "answer": "B ($$S_{1}$$, $$S_{2}$$ and $$S_{4}$$)",
-    "image": "2024-june-circuit-switches-heater-Q28.png",
-    "page": 12
-  },
-  {
-    "topic": "Electricity",
-    "question": "The metal case of an electrical appliance is fitted with an earth connection.\nWhat is the purpose of this?",
-    "difficulty": "Basic",
-    "answer": "D (to protect a user of the appliance from electric shock)",
-    "image": null,
-    "page": 12
-  },
-  {
-    "topic": "Magnetism",
-    "question": "A student moves a magnet into a coil, as shown. The voltmeter measures the magnitude of the electromotive force (e.m.f.) induced in the coil.\n\n\n\nWhich quantity does not affect the magnitude of the induced e.m.f.?",
-    "difficulty": "Intermediate",
-    "answer": "B (the polarity of the magnet)",
-    "image": "2024-june-electromagnetic-induction-coil-Q30.png",
-    "page": 13
-  },
-  {
-    "topic": "Magnetism",
-    "question": "A student makes a small d.c. motor. The teacher supplies the following equipment: battery, ammeter, voltmeter, coil of wire, magnets, resistor.\nThe student is also able to use other equipment if he wishes.\nWhich equipment must be used?",
-    "difficulty": "Basic",
-    "answer": "C (battery, coil of wire and magnets)",
-    "image": null,
-    "page": 13
-  },
-  {
-    "topic": "Atomic Physics",
-    "question": "A simple model of the atom consists of small particles orbiting a central nucleus.\nWhich row is correct?",
-    "difficulty": "Basic",
-    "answer": "C (Charge on nucleus: positive; Charge on orbiting particles: negative)",
-    "image": null,
-    "page": 14
-  },
-  {
-    "topic": "Atomic Physics",
-    "question": "What is the charge on a proton and what is the charge on a neutron?",
-    "difficulty": "Basic",
-    "answer": "B (Proton: +1; Neutron: 0)",
-    "image": null,
-    "page": 14
-  },
-  {
-    "topic": "Nuclear Physics",
-    "question": "An isotope of radon is radioactive. It decays by emitting an $$\\alpha$$-particle.\nWhat happens to the nucleus of a radon atom during the emission of the $$\\alpha$$-particle?",
-    "difficulty": "Intermediate",
-    "answer": "D (It becomes the nucleus of an element with a lower proton number.)",
-    "image": null,
-    "page": 14
-  },
-  {
-    "topic": "Nuclear Physics",
-    "question": "The nuclide notation of the isotope strontium-90 is $${}_{38}^{90}Sr.$$ Which statement is correct?",
-    "difficulty": "Basic",
-    "answer": "B (A nucleus of strontium-90 has 52 neutrons.)",
-    "image": null,
-    "page": 14
-  },
-  {
-    "topic": "Nuclear Physics",
-    "question": "A box is used for storing radioactive sources. What is the best material to use for lining the box to prevent radiation from escaping?",
-    "difficulty": "Basic",
-    "answer": "B (lead)",
-    "image": null,
-    "page": 15
-  },
-  {
-    "topic": "Space Physics",
-    "question": "The Earth is a planet that orbits the Sun once in approximately 365 days.\n\n\n\nWhat does this enable us to explain?",
-    "difficulty": "Basic",
-    "answer": "C (the periodic nature of the seasons)",
-    "image": "2024-june-solar-system-orbits-Q37.png",
-    "page": 15
-  },
-  {
-    "topic": "Space Physics",
-    "question": "The radius of the orbit of Venus around the Sun is $$110 \\times 10^{6} km$$. The radius of the orbit of the Earth around the Sun is $$150 \\times 10^{6} km$$. The speed of light is $$0.30 \\times 10^{6} km/s.$$ \n\n\n\nHow long does light take to travel from Venus to the Earth when these planets are closest to each other?",
-    "difficulty": "Intermediate",
-    "answer": "A (130 s)",
-    "image": "2024-june-venus-earth-orbit-light-speed-Q38.png",
-    "page": 15
-  },
-  {
-    "topic": "Space Physics",
-    "question": "What are the three main types of radiation emitted by the Sun?",
-    "difficulty": "Basic",
-    "answer": "B (infrared, visible light and ultraviolet)",
-    "image": null,
-    "page": 15
-  },
-  {
-    "topic": "Space Physics",
-    "question": "What is a light-year?",
-    "difficulty": "Basic",
-    "answer": "C (the distance travelled in space by light in one year)",
-    "image": null,
-    "page": 16
+    "marks": 6
   }
 ]
