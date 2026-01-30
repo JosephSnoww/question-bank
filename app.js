@@ -87,6 +87,7 @@ function renderMath() {
 	if (window.MathJax) {
 		window.MathJax.typesetPromise().catch(err => console.log(err));
 	}
+	}
 
 function createQuestionCard(q, displayNum) {
     const card = document.createElement('div');
