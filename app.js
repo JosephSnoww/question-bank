@@ -80,7 +80,7 @@ function renderQuestions() {
         const card = createQuestionCard(q, index + 1);
         container.appendChild(card);
     });
-    renderMath();
+    renderMath(container);
 }
 
 function renderMath() {
@@ -145,7 +145,7 @@ function renderExamQuestions() {
         `;
         container.appendChild(card);
     });
-    renderMath();
+    renderMath(container);
 }
 
 function toggleSelection(id, checked) {
@@ -162,7 +162,7 @@ function showRandomQuestion() {
     container.innerHTML = '';
     const card = createQuestionCard(q, 'Random');
     container.appendChild(card);
-    renderMath();
+    renderMath(container);
 }
 
 function renderMath(element = null) {
